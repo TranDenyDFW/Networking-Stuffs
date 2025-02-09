@@ -1,0 +1,215 @@
+{
+    "auto_close": true,
+    "auto_open": false,
+    "auto_start": false,
+    "drawing_grid_size": 25,
+    "grid_size": 75,
+    "name": "DNS IPv4",
+    "project_id": "78ac3791-c3ff-421d-9b2d-306160ff7816",
+    "revision": 9,
+    "scene_height": 1000,
+    "scene_width": 2000,
+    "show_grid": false,
+    "show_interface_labels": false,
+    "show_layers": false,
+    "snap_to_grid": false,
+    "supplier": null,
+    "topology": {
+        "computes": [],
+        "drawings": [
+            {
+                "drawing_id": "0e4cd34f-0f97-4b52-b6e9-2d069498f088",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"248\" height=\"136\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">IPV4 DOMAIN NAME SYSTEM (DNS)\n\n - Basic DNS Destination UDP Port: 53\n - Record Types:\n     - A (Address)\n     - CNAME (Canonical Name)\n     - MX (Mail Exchange)\n     - PTR (Pointer)</text></svg>",
+                "x": -342,
+                "y": -81,
+                "z": 2
+            },
+            {
+                "drawing_id": "2fed0190-8416-44ca-b858-a75ddf8e3f38",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"235\" height=\"296\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">! PC1\n\nconf t\n\nint f0/0\nip add 10.0.0.2 255.255.255.0\nno shut\n\nip domain lookup\nip name-server 10.0.0.1\nip route 0.0.0.0 0.0.0.0 10.0.0.1\n\nend\nwr\n\n! debug ip udp\n! ping server.dnstest.com repeat 1\n! no debug ip udp</text></svg>",
+                "x": -642,
+                "y": -443,
+                "z": 2
+            },
+            {
+                "drawing_id": "0af5d446-062b-4295-8139-7471255fd202",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"239\" height=\"280\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">! R1\n\nconf t\nip dns server\nip host server.dnstest.com 10.2.2.2\n\nint lo222\nip add 10.2.2.2 255.255.255.255\n\nint f0/0\nip add 10.0.0.1 255.255.255.0\nno shut\n\nend\nping server.dnstest.com\nwr\n</text></svg>",
+                "x": -39,
+                "y": -435,
+                "z": 2
+            }
+        ],
+        "links": [
+            {
+                "filters": {},
+                "link_id": "6ab37dca-4a85-401a-a7ba-16eb4d1d6afd",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "f0/0",
+                            "x": 72,
+                            "y": 22
+                        },
+                        "node_id": "939515f8-7891-4e08-86ba-22a6e99c2ca0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "f0/0",
+                            "x": -7,
+                            "y": 28
+                        },
+                        "node_id": "144c2d15-cfc0-456a-bf01-02423800e8d9",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
+            }
+        ],
+        "nodes": [
+            {
+                "compute_id": "vm",
+                "console": 5002,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "R1",
+                    "x": 20,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "R1",
+                "node_id": "939515f8-7891-4e08-86ba-22a6e99c2ca0",
+                "node_type": "dynamips",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "auto_delete_disks": true,
+                    "aux": null,
+                    "clock_divisor": 4,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "dynamips_id": 1,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x60189234",
+                    "idlesleep": 30,
+                    "image": "c7200-adventerprisek9-mz.152-4.M11.image",
+                    "image_md5sum": "9a2005ad09ce1ec6fe7cf9af1e9b099e",
+                    "mac_addr": "ca01.0c7e.0000",
+                    "midplane": "vxr",
+                    "mmap": true,
+                    "npe": "npe-400",
+                    "nvram": 512,
+                    "platform": "c7200",
+                    "power_supplies": [
+                        1,
+                        1
+                    ],
+                    "ram": 256,
+                    "sensors": [
+                        22,
+                        22,
+                        22,
+                        22
+                    ],
+                    "slot0": "C7200-IO-FE",
+                    "slot1": "PA-A1",
+                    "slot2": "PA-2FE-TX",
+                    "slot3": "PA-GE",
+                    "slot4": "PA-4T+",
+                    "slot5": "PA-8E",
+                    "slot6": "PA-POS-OC3",
+                    "sparsemem": true,
+                    "system_id": "FTX0945W0MY",
+                    "usage": ""
+                },
+                "symbol": ":/symbols/router.svg",
+                "template_id": "4680dc0a-c179-452b-808c-179eeeebf6b1",
+                "width": 66,
+                "x": -145,
+                "y": -178,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5003,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 59,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "PC1",
+                    "x": 16,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "PC1",
+                "node_id": "144c2d15-cfc0-456a-bf01-02423800e8d9",
+                "node_type": "dynamips",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "auto_delete_disks": true,
+                    "aux": null,
+                    "clock_divisor": 8,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "dynamips_id": 2,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x602467a4",
+                    "idlesleep": 30,
+                    "image": "c3725-adventerprisek9-mz.124-15.T14.image",
+                    "image_md5sum": "64f8c427ed48fd21bd02cf1ff254c4eb",
+                    "iomem": 5,
+                    "mac_addr": "c202.0ca1.0000",
+                    "mmap": true,
+                    "nvram": 256,
+                    "platform": "c3725",
+                    "ram": 128,
+                    "slot0": "GT96100-FE",
+                    "slot1": null,
+                    "slot2": null,
+                    "sparsemem": true,
+                    "system_id": "FTX0945W0MY",
+                    "usage": "",
+                    "wic0": null,
+                    "wic1": null,
+                    "wic2": null
+                },
+                "symbol": ":/symbols/classic/computer.svg",
+                "template_id": "d615302d-abac-4a17-875f-ff93c4f95942",
+                "width": 65,
+                "x": -358,
+                "y": -186,
+                "z": 1
+            }
+        ]
+    },
+    "type": "topology",
+    "variables": null,
+    "version": "2.2.51",
+    "zoom": 141
+}
