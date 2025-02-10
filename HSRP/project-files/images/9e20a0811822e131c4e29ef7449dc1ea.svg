@@ -1,0 +1,28 @@
+<svg width="869" height="372"><text font-family="Bitstream Vera Sans Mono" font-size="8.0" fill="#000000" fill-opacity="1.0">HELLO MESSAGES
+ - HSRP routers exchange hello messages to detect failures.
+ - Default Hello Timer: 3 seconds
+ - Default Hold Timer: 10 seconds (If no hello message is received within this time, the active router is considered down.)
+HSRP STATES
+ - Disabled – HSRP is not running.
+ - Init – Router is waiting for HSRP to start.
+ - Listen – Router listens for HSRP hello messages.
+ - Speak – Router actively participates in the election.
+ - Standby – Backup router, ready to take over if the active router fails.
+ - Active – Router currently forwarding traffic for the virtual IP.
+HSRP STATES
+ - Disabled – HSRP is not running.
+ - Init – Router is waiting for HSRP to start.
+ - Listen – Router listens for HSRP hello messages.
+ - Speak – Router actively participates in the election.
+ - Standby – Backup router, ready to take over if the active router fails.
+ - Active – Router currently forwarding traffic for the virtual IP.
+PRIORITY VALUES
+ - Determines which router becomes the Active router.
+ - Default is 100, but a higher priority wins.
+ - If preemption is enabled, a router with a higher priority can take over when it recovers.
+VIRTUAL IP ADDRESSES
+ - HSRP assigns a virtual IP that client devices use as their default gateway.
+ - The Active router owns this IP, and the Standby router takes over if the Active fails.
+HSRP VERSIONS
+ - HSRPv1: Uses 224.0.0.2 and supports up to 255 groups.
+ - HSRPv2: Uses 224.0.0.10, supports up to 4095 groups, and has improved security and efficiency.</text></svg>

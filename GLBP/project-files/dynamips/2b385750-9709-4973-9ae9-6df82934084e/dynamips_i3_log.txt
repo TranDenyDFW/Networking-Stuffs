@@ -1,0 +1,19 @@
+Feb 09 15:32:33.170 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Feb 09 15:32:33.171 HYPERVISOR: Started on IP = localhost, TCP port = 63027.
+Feb 09 15:32:33.642 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 09 15:32:33.643 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Shake\GNS3\CCNA Labs\GLBP\project-files\dynamips 
+Feb 09 15:32:33.643 GENERAL: working_dir=C:\Users\Shake\GNS3\CCNA Labs\GLBP\project-files\dynamips
+Feb 09 15:32:33.643 HYPERVISOR: exec_cmd: ethsw create S2 
+Feb 09 15:32:38.398 HYPERVISOR: exec_cmd: nio create_udp udp-a8ca4af2-5135-424a-8b6b-10a9680e7f20 10013 127.0.0.1 10012 
+Feb 09 15:32:38.399 HYPERVISOR: exec_cmd: ethsw add_nio S2 udp-a8ca4af2-5135-424a-8b6b-10a9680e7f20 
+Feb 09 15:32:38.420 HYPERVISOR: exec_cmd: ethsw set_access_port S2 udp-a8ca4af2-5135-424a-8b6b-10a9680e7f20 1 
+Feb 09 15:32:38.520 HYPERVISOR: exec_cmd: nio create_udp udp-5f32c6f5-220f-4d88-a0b5-048033046eb7 10017 127.0.0.1 10016 
+Feb 09 15:32:38.522 HYPERVISOR: exec_cmd: ethsw add_nio S2 udp-5f32c6f5-220f-4d88-a0b5-048033046eb7 
+Feb 09 15:32:38.543 HYPERVISOR: exec_cmd: ethsw set_access_port S2 udp-5f32c6f5-220f-4d88-a0b5-048033046eb7 1 
+Feb 09 15:32:39.589 HYPERVISOR: exec_cmd: nio create_udp udp-3af866c7-5246-437b-8a07-818a4ede6895 10021 127.0.0.1 10020 
+Feb 09 15:32:39.590 HYPERVISOR: exec_cmd: ethsw add_nio S2 udp-3af866c7-5246-437b-8a07-818a4ede6895 
+Feb 09 15:32:39.591 HYPERVISOR: exec_cmd: ethsw set_access_port S2 udp-3af866c7-5246-437b-8a07-818a4ede6895 1 
+Feb 09 18:16:47.199 HYPERVISOR: exec_cmd: ethsw delete S2 
+Feb 09 18:16:47.284 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 09 18:16:47.714 HYPERVISOR: Stopped.
+Feb 09 18:16:47.714 GENERAL: reset done.
