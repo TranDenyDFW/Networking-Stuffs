@@ -1,0 +1,60 @@
+Feb 09 12:29:05.816 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Feb 09 12:29:05.818 HYPERVISOR: Started on IP = localhost, TCP port = 50330.
+Feb 09 12:29:06.101 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 09 12:29:06.102 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Shake\GNS3\projects\Template2\project-files\dynamips 
+Feb 09 12:29:06.104 GENERAL: working_dir=C:\Users\Shake\GNS3\projects\Template2\project-files\dynamips
+Feb 09 12:29:06.105 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Shake\GNS3\projects\Template2\project-files\dynamips\bd805faa-9635-4a1b-8545-457c363937cb 
+Feb 09 12:29:06.105 GENERAL: working_dir=C:\Users\Shake\GNS3\projects\Template2\project-files\dynamips\bd805faa-9635-4a1b-8545-457c363937cb
+Feb 09 12:29:06.105 HYPERVISOR: exec_cmd: vm create R1 1 c7200 
+Feb 09 12:29:06.118 VM: VM R1 created.
+Feb 09 12:29:06.119 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5007 
+Feb 09 12:29:06.119 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+Feb 09 12:29:06.119 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 09 12:29:06.119 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+Feb 09 12:29:06.121 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Feb 09 12:29:06.121 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Feb 09 12:29:06.121 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 09 12:29:06.122 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60189234 
+Feb 09 12:29:06.123 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/Shake/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M11.image 
+Feb 09 12:29:06.123 HYPERVISOR: exec_cmd: c7200 set_mac_addr R1 ca01.4413.0000 
+Feb 09 12:29:06.124 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+Feb 09 12:29:06.124 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 09 12:29:06.124 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-A1 
+Feb 09 12:29:06.125 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 09 12:29:06.125 HYPERVISOR: exec_cmd: vm slot_add_binding R1 2 0 PA-2FE-TX 
+Feb 09 12:29:06.125 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 09 12:29:06.125 HYPERVISOR: exec_cmd: vm slot_add_binding R1 3 0 PA-GE 
+Feb 09 12:29:06.126 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 09 12:29:06.126 HYPERVISOR: exec_cmd: vm slot_add_binding R1 4 0 PA-4T+ 
+Feb 09 12:29:06.126 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 09 12:29:06.127 HYPERVISOR: exec_cmd: vm slot_add_binding R1 5 0 PA-8E 
+Feb 09 12:29:06.127 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 09 12:29:06.127 HYPERVISOR: exec_cmd: vm slot_add_binding R1 6 0 PA-POS-OC3 
+Feb 09 12:29:06.820 HYPERVISOR: exec_cmd: nio create_udp udp-bceae590-6187-4978-bd9f-544a27ed2e21 10002 127.0.0.1 10003 
+Feb 09 12:29:07.148 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-bceae590-6187-4978-bd9f-544a27ed2e21 
+Feb 09 12:29:07.149 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 09 12:29:14.353 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Feb 09 12:29:14.356 VM: VM Ghost created.
+Feb 09 12:29:14.357 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Shake/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M11.image 
+Feb 09 12:29:14.357 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Feb 09 12:29:14.358 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\Shake\GNS3\projects\Template2\project-files\dynamips\c7200-adventerprisek9-mz.152-4.M11.image-256.ghost 
+Feb 09 12:29:14.358 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Feb 09 12:29:14.358 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Feb 09 12:29:14.360 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Feb 09 12:29:14.360 HYPERVISOR: exec_cmd: vm start Ghost 
+Feb 09 12:29:14.876 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Feb 09 12:29:14.877 HYPERVISOR: exec_cmd: vm stop Ghost 
+Feb 09 12:29:15.020 VM: VM Ghost shutdown.
+Feb 09 12:29:15.021 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Feb 09 12:29:15.022 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Feb 09 12:29:15.022 VM: VM Ghost destroyed.
+Feb 09 12:29:15.030 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Feb 09 12:29:15.030 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Shake\GNS3\projects\Template2\project-files\dynamips\c7200-adventerprisek9-mz.152-4.M11.image-256.ghost 
+Feb 09 12:29:15.031 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 09 12:29:15.049 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg configs\i1_private-config.cfg 
+Feb 09 12:29:15.050 HYPERVISOR: exec_cmd: vm start R1 
+Feb 09 12:30:45.478 HYPERVISOR: exec_cmd: vm extract_config R1 
+Feb 09 12:31:18.616 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 09 12:31:18.617 HYPERVISOR: exec_cmd: vm stop R1 
+Feb 09 12:31:18.728 VM: VM R1 shutdown.
+Feb 09 12:31:18.729 HYPERVISOR: exec_cmd: vm extract_config R1 
