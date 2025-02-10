@@ -1,0 +1,224 @@
+{
+    "auto_close": true,
+    "auto_open": false,
+    "auto_start": false,
+    "drawing_grid_size": 25,
+    "grid_size": 75,
+    "name": "NTP",
+    "project_id": "afca98ee-9469-4134-9e9a-03e35b21d3b8",
+    "revision": 9,
+    "scene_height": 1000,
+    "scene_width": 2000,
+    "show_grid": false,
+    "show_interface_labels": false,
+    "show_layers": false,
+    "snap_to_grid": false,
+    "supplier": null,
+    "topology": {
+        "computes": [],
+        "drawings": [
+            {
+                "drawing_id": "6d5ca789-f809-4440-96f9-905d68da927f",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"221\" height=\"120\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">NETWORK TIME PROTOCOL (NTP)\n - Transport Layer: UDP Port 123\n - UTC Default Time Zone\n - Common Uses\n     - Logging \n     - Time-Based ACLs\n     - Certificates</text></svg>",
+                "x": -124,
+                "y": -322,
+                "z": 2
+            },
+            {
+                "drawing_id": "57c92b82-af8e-4fdc-b33a-64cfecb9e9c1",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"38\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">F0/0</text></svg>",
+                "x": -32,
+                "y": -158,
+                "z": 2
+            },
+            {
+                "drawing_id": "868796fd-0338-49bb-8c7b-30129ac9bed0",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"200\" height=\"296\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">!PC1\nconf t\nclock timezone PST -8\ndo show clock\nno ip routing\nntp server 10.0.0.1\nint f0/0\nmac-address 0001.6422.2222\nduplex auto\nno shut\nip add 10.0.0.2 255.255.255.0\nend\nsh clock\nsh ntp assoc\nsh ntp status\nsh ntp assoc det\nwr\n</text></svg>",
+                "x": 29,
+                "y": -97,
+                "z": 2
+            },
+            {
+                "drawing_id": "36492465-f46f-4bc5-a4ef-7af9b3a4f9d5",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"247\" height=\"200\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">!R1\nconf t\nclock timezone PST -8\ndo clock set 11:17:00 March 26 2015\nntp master\nint f0/0\nno shut\nmac-address 0001.6411.1111\nip add 10.0.0.1 255.255.255.0\nend\nwr\n</text></svg>",
+                "x": -250,
+                "y": -94,
+                "z": 2
+            }
+        ],
+        "links": [
+            {
+                "filters": {},
+                "link_id": "fe7d0de9-e402-4fb2-b4ef-37d5fb43128c",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "f0/0",
+                            "x": 72,
+                            "y": 22
+                        },
+                        "node_id": "d6624c5f-ff48-4fe7-9b5c-846b7032e03f",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "f0/0",
+                            "x": -7,
+                            "y": 29
+                        },
+                        "node_id": "76d5a504-0538-41be-ae38-890a2fc42c6a",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
+            }
+        ],
+        "nodes": [
+            {
+                "compute_id": "vm",
+                "console": 5000,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "R1",
+                    "x": 20,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "R1",
+                "node_id": "d6624c5f-ff48-4fe7-9b5c-846b7032e03f",
+                "node_type": "dynamips",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "auto_delete_disks": true,
+                    "aux": null,
+                    "clock_divisor": 4,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "dynamips_id": 1,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "",
+                    "idlesleep": 30,
+                    "image": "c7200-a3jk9s-mz.124-25g.image",
+                    "image_md5sum": "9c7cc9b3f3b3571411a7f62faaa2c036",
+                    "mac_addr": "ca01.05fb.0000",
+                    "midplane": "vxr",
+                    "mmap": true,
+                    "npe": "npe-400",
+                    "nvram": 512,
+                    "platform": "c7200",
+                    "power_supplies": [
+                        1,
+                        1
+                    ],
+                    "ram": 512,
+                    "sensors": [
+                        22,
+                        22,
+                        22,
+                        22
+                    ],
+                    "slot0": "C7200-IO-FE",
+                    "slot1": "PA-2FE-TX",
+                    "slot2": "PA-2FE-TX",
+                    "slot3": "PA-2FE-TX",
+                    "slot4": null,
+                    "slot5": null,
+                    "slot6": null,
+                    "sparsemem": true,
+                    "system_id": "FTX0945W0MY",
+                    "usage": ""
+                },
+                "symbol": ":/symbols/router.svg",
+                "template_id": "6405e060-2687-43e2-9836-d645158d605f",
+                "width": 66,
+                "x": -172,
+                "y": -152,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5001,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 59,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "PC1",
+                    "x": 16,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "PC1",
+                "node_id": "76d5a504-0538-41be-ae38-890a2fc42c6a",
+                "node_type": "dynamips",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "auto_delete_disks": true,
+                    "aux": null,
+                    "clock_divisor": 8,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "dynamips_id": 2,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x602467a4",
+                    "idlesleep": 30,
+                    "image": "c3725-adventerprisek9-mz.124-15.T14.image",
+                    "image_md5sum": "64f8c427ed48fd21bd02cf1ff254c4eb",
+                    "iomem": 5,
+                    "mac_addr": "c202.061c.0000",
+                    "mmap": true,
+                    "nvram": 256,
+                    "platform": "c3725",
+                    "ram": 128,
+                    "slot0": "GT96100-FE",
+                    "slot1": null,
+                    "slot2": null,
+                    "sparsemem": true,
+                    "system_id": "FTX0945W0MY",
+                    "usage": "",
+                    "wic0": null,
+                    "wic1": null,
+                    "wic2": null
+                },
+                "symbol": ":/symbols/classic/computer.svg",
+                "template_id": "d615302d-abac-4a17-875f-ff93c4f95942",
+                "width": 65,
+                "x": 79,
+                "y": -159,
+                "z": 1
+            }
+        ]
+    },
+    "type": "topology",
+    "variables": null,
+    "version": "2.2.51",
+    "zoom": 141
+}
