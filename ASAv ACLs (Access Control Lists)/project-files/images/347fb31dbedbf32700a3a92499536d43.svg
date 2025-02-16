@@ -1,0 +1,49 @@
+<svg width="428" height="449"><text font-family="Bitstream Vera Sans Mono" font-size="6.0" fill="#000000" fill-opacity="1.0">!ASAv
+conf t
+
+http server enable
+http 192.168.254.0 255.255.255.0 outside
+no logging enable
+
+user cisco pass ciscoasa priv 15
+enable pass ciscoasa
+
+policy-map global_policy
+class inspection_default
+inspect icmp
+
+int g0/2
+security-level 0
+nameif outside
+ip add 192.168.254.250 255.255.255.0
+no shut
+
+int g0/1
+security-level 100
+nameif inside
+ip add 10.1.0.250 255.255.255.0
+no shut
+exit
+
+route outside 0.0.0.0 0.0.0.0 192.168.254.254
+route inside 10.0.0.0 255.0.0.0 10.1.0.1
+
+object network SUBNET_10_NAT
+subnet 10.0.0.0 255.255.255.0
+nat (any,outside) dynamic interface
+
+object network R1
+host 10.1.0.1
+
+object network GLOBAL_R1
+host 192.168.254.252
+
+nat (outside,inside) 1 source static any any destination static GLOBAL_R1 R1
+
+no access-list outside_access_in line 1 extended permit tcp any object R1 eq ssh 
+access-list outside_access_in line 1 extended permit tcp any object GLOBAL_R1 eq ssh
+access-group outside_access_in in interface outside
+
+end
+wr
+</text></svg>
