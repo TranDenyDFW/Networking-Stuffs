@@ -1,0 +1,802 @@
+{
+    "auto_close": true,
+    "auto_open": false,
+    "auto_start": false,
+    "drawing_grid_size": 25,
+    "grid_size": 75,
+    "name": "Service Provider IS-IS Optimizations",
+    "project_id": "55e543a2-fcd0-46f6-9fcb-222e451cad92",
+    "revision": 9,
+    "scene_height": 1000,
+    "scene_width": 2000,
+    "show_grid": true,
+    "show_interface_labels": false,
+    "show_layers": false,
+    "snap_to_grid": false,
+    "supplier": null,
+    "topology": {
+        "computes": [],
+        "drawings": [
+            {
+                "drawing_id": "ade6602c-67a5-4157-b351-15bd58c0bd63",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"28\" height=\"17\"><text font-family=\"Bitstream Vera Sans Mono\" font-size=\"6.0\" fill=\"#000000\" fill-opacity=\"1.0\">E5/0</text></svg>",
+                "x": -384,
+                "y": -26,
+                "z": 2
+            },
+            {
+                "drawing_id": "dd59bcb7-45be-4360-9056-717fdd291080",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"28\" height=\"17\"><text font-family=\"Bitstream Vera Sans Mono\" font-size=\"6.0\" fill=\"#000000\" fill-opacity=\"1.0\">E0/1</text></svg>",
+                "x": -385,
+                "y": -52,
+                "z": 2
+            },
+            {
+                "drawing_id": "90c7f44c-ad6c-4093-bdc1-ed48b23bc85e",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"28\" height=\"17\"><text font-family=\"Bitstream Vera Sans Mono\" font-size=\"6.0\" fill=\"#000000\" fill-opacity=\"1.0\">E0/2</text></svg>",
+                "x": -73,
+                "y": -166,
+                "z": 2
+            },
+            {
+                "drawing_id": "27644283-7fa6-49f5-b2ec-14af616d2bb7",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"28\" height=\"17\"><text font-family=\"Bitstream Vera Sans Mono\" font-size=\"6.0\" fill=\"#000000\" fill-opacity=\"1.0\">E0/3</text></svg>",
+                "x": 194,
+                "y": -166,
+                "z": 2
+            },
+            {
+                "drawing_id": "32c87c63-807d-4287-bee7-632c7d5be671",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"28\" height=\"17\"><text font-family=\"Bitstream Vera Sans Mono\" font-size=\"6.0\" fill=\"#000000\" fill-opacity=\"1.0\">E0/1</text></svg>",
+                "x": 77,
+                "y": -166,
+                "z": 2
+            },
+            {
+                "drawing_id": "e72653d9-8c93-4b6c-ac2d-63084a0886ea",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"28\" height=\"17\"><text font-family=\"Bitstream Vera Sans Mono\" font-size=\"6.0\" fill=\"#000000\" fill-opacity=\"1.0\">E4/0</text></svg>",
+                "x": 196,
+                "y": -48,
+                "z": 2
+            },
+            {
+                "drawing_id": "9e0365b1-af5a-4d11-ab37-6f57cc6d0f52",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"28\" height=\"17\"><text font-family=\"Bitstream Vera Sans Mono\" font-size=\"6.0\" fill=\"#000000\" fill-opacity=\"1.0\">E4/0</text></svg>",
+                "x": -97,
+                "y": 60,
+                "z": 2
+            },
+            {
+                "drawing_id": "ec4701d2-800d-460a-8508-da639133323c",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"28\" height=\"17\"><text font-family=\"Bitstream Vera Sans Mono\" font-size=\"6.0\" fill=\"#000000\" fill-opacity=\"1.0\">E0/3</text></svg>",
+                "x": -66,
+                "y": -48,
+                "z": 2
+            },
+            {
+                "drawing_id": "206a0707-4ac2-4446-ad78-e57952316fe7",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"28\" height=\"17\"><text font-family=\"Bitstream Vera Sans Mono\" font-size=\"6.0\" fill=\"#000000\" fill-opacity=\"1.0\">E5/0</text></svg>",
+                "x": 222,
+                "y": 62,
+                "z": 2
+            },
+            {
+                "drawing_id": "c43f92a5-607b-4e25-8088-15006c31bd1a",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"28\" height=\"17\"><text font-family=\"Bitstream Vera Sans Mono\" font-size=\"6.0\" fill=\"#000000\" fill-opacity=\"1.0\">E0/2</text></svg>",
+                "x": 77,
+                "y": 61,
+                "z": 2
+            },
+            {
+                "drawing_id": "2b8842e9-6273-45a7-848b-6e258e4aa7d6",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"28\" height=\"17\"><text font-family=\"Bitstream Vera Sans Mono\" font-size=\"6.0\" fill=\"#000000\" fill-opacity=\"1.0\">E0/2</text></svg>",
+                "x": 509,
+                "y": -26,
+                "z": 2
+            },
+            {
+                "drawing_id": "ddc3d606-af51-4142-8b0e-4942f59db359",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"28\" height=\"17\"><text font-family=\"Bitstream Vera Sans Mono\" font-size=\"6.0\" fill=\"#000000\" fill-opacity=\"1.0\">E0/1</text></svg>",
+                "x": 509,
+                "y": -51,
+                "z": 2
+            }
+        ],
+        "links": [
+            {
+                "filters": {},
+                "link_id": "ad7a69b9-1b1f-4426-8b14-d734b699e9f7",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/1",
+                            "x": 73,
+                            "y": 22
+                        },
+                        "node_id": "cfba0a78-414d-4fc3-b9de-b27137a372d0",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/1",
+                            "x": -7,
+                            "y": 22
+                        },
+                        "node_id": "e51eed42-7106-49d8-b06e-d4a548c41632",
+                        "port_number": 1
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "dd787035-6bac-411d-bb67-b7d49a98f03b",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/2",
+                            "x": 73,
+                            "y": 17
+                        },
+                        "node_id": "cfba0a78-414d-4fc3-b9de-b27137a372d0",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/2",
+                            "x": -7,
+                            "y": 17
+                        },
+                        "node_id": "e51eed42-7106-49d8-b06e-d4a548c41632",
+                        "port_number": 2
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "6b44cb68-60f0-4c9f-af3b-799a49afbc7f",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 4,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e4/0",
+                            "x": 72,
+                            "y": 22
+                        },
+                        "node_id": "8ab9078a-56ae-4f14-b6a6-f53a6baddfbf",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 4,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e4/0",
+                            "x": -6,
+                            "y": 21
+                        },
+                        "node_id": "cfba0a78-414d-4fc3-b9de-b27137a372d0",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "22787e70-4a5b-40e6-bed9-4226fc747e37",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 5,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e5/0",
+                            "x": 65,
+                            "y": -1
+                        },
+                        "node_id": "eca290f6-598c-414b-9e6b-2779f09de25a",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 5,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e5/0",
+                            "x": 0,
+                            "y": 45
+                        },
+                        "node_id": "cfba0a78-414d-4fc3-b9de-b27137a372d0",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "0bac3a3d-c6e2-4811-b226-b5736e48f9a0",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 4,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e4/0",
+                            "x": 65,
+                            "y": 45
+                        },
+                        "node_id": "e78f658e-3067-483b-a4f1-6cbec0b499b3",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 4,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e4/0",
+                            "x": 0,
+                            "y": -1
+                        },
+                        "node_id": "eca290f6-598c-414b-9e6b-2779f09de25a",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "899a2cba-e708-43ea-a5aa-65ede843a754",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 5,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e5/0",
+                            "x": 72,
+                            "y": 21
+                        },
+                        "node_id": "32cd393a-56a7-469a-b8ff-3aab0ddeefe7",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 5,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e5/0",
+                            "x": -6,
+                            "y": 22
+                        },
+                        "node_id": "e78f658e-3067-483b-a4f1-6cbec0b499b3",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "45202fc5-a68c-4e2d-94e4-038ff9b103b7",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/1",
+                            "x": 72,
+                            "y": 16
+                        },
+                        "node_id": "32cd393a-56a7-469a-b8ff-3aab0ddeefe7",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/1",
+                            "x": -7,
+                            "y": 17
+                        },
+                        "node_id": "e78f658e-3067-483b-a4f1-6cbec0b499b3",
+                        "port_number": 1
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "9e8d9873-c4f4-4aa2-9e22-9bf1e45eee47",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/2",
+                            "x": 5,
+                            "y": 51
+                        },
+                        "node_id": "aeddaf68-6c18-4542-9dd9-3bce3de976ae",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/2",
+                            "x": 60,
+                            "y": -7
+                        },
+                        "node_id": "e78f658e-3067-483b-a4f1-6cbec0b499b3",
+                        "port_number": 2
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "f667eac6-5570-44f3-9178-87b775d25e0f",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/3",
+                            "x": 72,
+                            "y": 21
+                        },
+                        "node_id": "e78f658e-3067-483b-a4f1-6cbec0b499b3",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/3",
+                            "x": -6,
+                            "y": 22
+                        },
+                        "node_id": "8ab9078a-56ae-4f14-b6a6-f53a6baddfbf",
+                        "port_number": 3
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "9dfbcbdd-d00e-43a1-9bb4-15ea9149ce36",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/3",
+                            "x": 60,
+                            "y": 50
+                        },
+                        "node_id": "aeddaf68-6c18-4542-9dd9-3bce3de976ae",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/3",
+                            "x": 5,
+                            "y": -6
+                        },
+                        "node_id": "cfba0a78-414d-4fc3-b9de-b27137a372d0",
+                        "port_number": 3
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "34be46cc-81d3-4146-b235-fbd77e315e41",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/1",
+                            "x": 33,
+                            "y": 61
+                        },
+                        "node_id": "aeddaf68-6c18-4542-9dd9-3bce3de976ae",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/1",
+                            "x": 32,
+                            "y": -17
+                        },
+                        "node_id": "8ab9078a-56ae-4f14-b6a6-f53a6baddfbf",
+                        "port_number": 1
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "a22ba92c-7fe4-4b40-8651-4f32a63c4c98",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/2",
+                            "x": 32,
+                            "y": 61
+                        },
+                        "node_id": "8ab9078a-56ae-4f14-b6a6-f53a6baddfbf",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/2",
+                            "x": 33,
+                            "y": -17
+                        },
+                        "node_id": "eca290f6-598c-414b-9e6b-2779f09de25a",
+                        "port_number": 2
+                    }
+                ],
+                "suspend": false
+            }
+        ],
+        "nodes": [
+            {
+                "compute_id": "vm",
+                "console": 5014,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                    "text": "R1",
+                    "x": 26,
+                    "y": 24
+                },
+                "locked": true,
+                "name": "R1",
+                "node_id": "32cd393a-56a7-469a-b8ff-3aab0ddeefe7",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "properties": {
+                    "application_id": 8,
+                    "ethernet_adapters": 8,
+                    "l1_keepalives": false,
+                    "md5sum": "d6874260c3daeeb96d10fc844ae0b93b",
+                    "nvram": 512,
+                    "path": "i86bi_LinuxL3-AdvEnterpriseK9-M2_157_3_May_2018.bin",
+                    "ram": 512,
+                    "serial_adapters": 2,
+                    "usage": "",
+                    "use_default_iou_values": false
+                },
+                "symbol": ":/symbols/router.svg",
+                "template_id": "b7544043-53be-41e1-9cd7-757eb2bf9820",
+                "width": 66,
+                "x": -558,
+                "y": -50,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5015,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                    "text": "R2",
+                    "x": 25,
+                    "y": 24
+                },
+                "locked": true,
+                "name": "R2",
+                "node_id": "e78f658e-3067-483b-a4f1-6cbec0b499b3",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "properties": {
+                    "application_id": 9,
+                    "ethernet_adapters": 8,
+                    "l1_keepalives": false,
+                    "md5sum": "d6874260c3daeeb96d10fc844ae0b93b",
+                    "nvram": 512,
+                    "path": "i86bi_LinuxL3-AdvEnterpriseK9-M2_157_3_May_2018.bin",
+                    "ram": 512,
+                    "serial_adapters": 2,
+                    "usage": "",
+                    "use_default_iou_values": false
+                },
+                "symbol": ":/symbols/router.svg",
+                "template_id": "b7544043-53be-41e1-9cd7-757eb2bf9820",
+                "width": 66,
+                "x": -257,
+                "y": -51,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5016,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                    "text": "R3",
+                    "x": 25,
+                    "y": 24
+                },
+                "locked": true,
+                "name": "R3",
+                "node_id": "aeddaf68-6c18-4542-9dd9-3bce3de976ae",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "properties": {
+                    "application_id": 10,
+                    "ethernet_adapters": 8,
+                    "l1_keepalives": false,
+                    "md5sum": "d6874260c3daeeb96d10fc844ae0b93b",
+                    "nvram": 512,
+                    "path": "i86bi_LinuxL3-AdvEnterpriseK9-M2_157_3_May_2018.bin",
+                    "ram": 512,
+                    "serial_adapters": 2,
+                    "usage": "",
+                    "use_default_iou_values": false
+                },
+                "symbol": ":/symbols/router.svg",
+                "template_id": "b7544043-53be-41e1-9cd7-757eb2bf9820",
+                "width": 66,
+                "x": 42,
+                "y": -322,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5017,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                    "text": "R4",
+                    "x": 26,
+                    "y": 24
+                },
+                "locked": true,
+                "name": "R4",
+                "node_id": "eca290f6-598c-414b-9e6b-2779f09de25a",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "properties": {
+                    "application_id": 11,
+                    "ethernet_adapters": 8,
+                    "l1_keepalives": false,
+                    "md5sum": "d6874260c3daeeb96d10fc844ae0b93b",
+                    "nvram": 512,
+                    "path": "i86bi_LinuxL3-AdvEnterpriseK9-M2_157_3_May_2018.bin",
+                    "ram": 512,
+                    "serial_adapters": 2,
+                    "usage": "",
+                    "use_default_iou_values": false
+                },
+                "symbol": ":/symbols/router.svg",
+                "template_id": "b7544043-53be-41e1-9cd7-757eb2bf9820",
+                "width": 66,
+                "x": 42,
+                "y": 203,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5018,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                    "text": "R5",
+                    "x": 24,
+                    "y": 24
+                },
+                "locked": true,
+                "name": "R5",
+                "node_id": "8ab9078a-56ae-4f14-b6a6-f53a6baddfbf",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "properties": {
+                    "application_id": 12,
+                    "ethernet_adapters": 8,
+                    "l1_keepalives": false,
+                    "md5sum": "d6874260c3daeeb96d10fc844ae0b93b",
+                    "nvram": 512,
+                    "path": "i86bi_LinuxL3-AdvEnterpriseK9-M2_157_3_May_2018.bin",
+                    "ram": 512,
+                    "serial_adapters": 2,
+                    "usage": "",
+                    "use_default_iou_values": false
+                },
+                "symbol": ":/symbols/router.svg",
+                "template_id": "b7544043-53be-41e1-9cd7-757eb2bf9820",
+                "width": 66,
+                "x": 44,
+                "y": -52,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5019,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                    "text": "R6",
+                    "x": 27,
+                    "y": 24
+                },
+                "locked": true,
+                "name": "R6",
+                "node_id": "cfba0a78-414d-4fc3-b9de-b27137a372d0",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "properties": {
+                    "application_id": 13,
+                    "ethernet_adapters": 8,
+                    "l1_keepalives": false,
+                    "md5sum": "d6874260c3daeeb96d10fc844ae0b93b",
+                    "nvram": 512,
+                    "path": "i86bi_LinuxL3-AdvEnterpriseK9-M2_157_3_May_2018.bin",
+                    "ram": 512,
+                    "serial_adapters": 2,
+                    "usage": "",
+                    "use_default_iou_values": false
+                },
+                "symbol": ":/symbols/router.svg",
+                "template_id": "b7544043-53be-41e1-9cd7-757eb2bf9820",
+                "width": 66,
+                "x": 344,
+                "y": -51,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5020,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: Bitstream Vera Sans Mono;font-size: 6.0;fill: #000000;fill-opacity: 1.0;",
+                    "text": "R7",
+                    "x": 26,
+                    "y": 23
+                },
+                "locked": true,
+                "name": "R7",
+                "node_id": "e51eed42-7106-49d8-b06e-d4a548c41632",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "properties": {
+                    "application_id": 14,
+                    "ethernet_adapters": 8,
+                    "l1_keepalives": false,
+                    "md5sum": "d6874260c3daeeb96d10fc844ae0b93b",
+                    "nvram": 512,
+                    "path": "i86bi_LinuxL3-AdvEnterpriseK9-M2_157_3_May_2018.bin",
+                    "ram": 512,
+                    "serial_adapters": 2,
+                    "usage": "",
+                    "use_default_iou_values": false
+                },
+                "symbol": ":/symbols/router.svg",
+                "template_id": "b7544043-53be-41e1-9cd7-757eb2bf9820",
+                "width": 66,
+                "x": 643,
+                "y": -51,
+                "z": 1
+            }
+        ]
+    },
+    "type": "topology",
+    "variables": null,
+    "version": "2.2.53",
+    "zoom": 119
+}
